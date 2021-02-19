@@ -10,4 +10,5 @@ public class Variable2 {
 		System.out.println("결과값은 " + result + " 입니다.");
 		
 	}
+	
 }

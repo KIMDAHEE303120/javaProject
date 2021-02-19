@@ -11,5 +11,6 @@ public class Variable1 {
 		System.out.println ("result =>" +  result);
 		
 	}
+	
 
 }
