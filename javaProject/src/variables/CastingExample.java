@@ -19,12 +19,12 @@ public class CastingExample {
 		int i = 127;
 		
 		if(i < Byte.MIN_VALUE || i > Byte.MAX_VALUE) {
-			System.out.println("byteÅ¸ÀÔÀ¸·Î º¯È¯ÇÒ ¼ö ¾ø½À´Ï´Ù.");
-			System.out.println("°ªÀ» È®ÀÎÇÏ¼¼¿ä.");
+			System.out.println("byteíƒ€ì…ìœ¼ë¡œ ë³€í™˜í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
+			System.out.println("ê°’ì„ í™•ì¸í•˜ì„¸ìš”.");
 		}
 		else {
 			byte b = (byte) i;
-			System.out.println("byteÅ¸ÀÔ °ª : " + b);
+			System.out.println("byteíƒ€ì… ê°’ : " + b);
 		}
 		
 		

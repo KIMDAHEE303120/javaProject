@@ -2,7 +2,7 @@ package controls;
 
 public class WhileExample2 {
 	public static void main(String[] args) {
-		// ±¸±¸´Ü Ãâ·Â
+		// êµ¬êµ¬ë‹¨ ì¶œë ¥
 		int i = 1;
 		int num = 2;
 		while (i < 10) {

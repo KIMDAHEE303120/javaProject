@@ -5,23 +5,23 @@ public class CheckOverflowExample {
 		try {
 			int result = safeAdd(2000000000, 2000000000);
 			System.out.println(result);
-		} catch(ArithmeticException e) { // ¿¹¿ÜÃ³¸® try, catch±¸¹® 
-			System.out.println("¿À¹öÇÃ·Î¿ì°¡ ¹ß»ıÇÏ¿© Á¤È®ÇÏ°Ô °è»êÇÒ ¼ö ¾øÀ½"); //" > " +e.getMessage() ¿À·ù¸Ş½ÃÁö
-//			System.out.println("integerÀÇ max °ª: " + Integer.MAX_VALUE); > 2147483647
-//			System.out.println("integerÀÇ min °ª: " + Integer.MIN_VALUE); > -2149483648
+		} catch(ArithmeticException e) { // ì˜ˆì™¸ì²˜ë¦¬ try, catchêµ¬ë¬¸ 
+			System.out.println("ì˜¤ë²„í”Œë¡œìš°ê°€ ë°œìƒí•˜ì—¬ ì •í™•í•˜ê²Œ ê³„ì‚°í•  ìˆ˜ ì—†ìŒ"); //" > " +e.getMessage() ì˜¤ë¥˜ë©”ì‹œì§€
+//			System.out.println("integerì˜ max ê°’: " + Integer.MAX_VALUE); > 2147483647
+//			System.out.println("integerì˜ min ê°’: " + Integer.MIN_VALUE); > -2149483648
 
 		}
-//		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+//		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 	}
 
-	public static int safeAdd(int left, int right) { //return±¸¹® ¾øÀ¸¸é ÄÄÆÄÀÏ ¿¡·¯ 
-		if((right>0)) {  //¾ç¼öÀÏ °æ¿ì
-			if(left>(Integer.MAX_VALUE - right)) { //left¿Í right°ªÀÇ ÇÕÀÌ integerÀÇ max°ªÀÇ ¹üÀ§¸¦ ³ÑÁö ¾Ê°Ô ÇÏ±â À§ÇÔ 
-				throw new ArithmeticException("¿À¹öÇÃ·Î¿ì ¹ß»ı"); //¿¹¿Ü¹ß»ı 
+	public static int safeAdd(int left, int right) { //returnêµ¬ë¬¸ ì—†ìœ¼ë©´ ì»´íŒŒì¼ ì—ëŸ¬ 
+		if((right>0)) {  //ì–‘ìˆ˜ì¼ ê²½ìš°
+			if(left>(Integer.MAX_VALUE - right)) { //leftì™€ rightê°’ì˜ í•©ì´ integerì˜ maxê°’ì˜ ë²”ìœ„ë¥¼ ë„˜ì§€ ì•Šê²Œ í•˜ê¸° ìœ„í•¨ 
+				throw new ArithmeticException("ì˜¤ë²„í”Œë¡œìš° ë°œìƒ"); //ì˜ˆì™¸ë°œìƒ 
 			}
-		} else { //right<=0ÀÏ °æ¿ì (À½¼ö)
-			if(left<(Integer.MIN_VALUE -right)) { //integerÀÇ min°ªÀÇ ¹üÀ§¸¦ ³ÑÁö ¾Ê°Ô ÇÏ±â À§ÇÔ
-				throw new ArithmeticException("¿À¹öÇÃ·Î¿ì ¹ß»ı");
+		} else { //right<=0ì¼ ê²½ìš° (ìŒìˆ˜)
+			if(left<(Integer.MIN_VALUE -right)) { //integerì˜ minê°’ì˜ ë²”ìœ„ë¥¼ ë„˜ì§€ ì•Šê²Œ í•˜ê¸° ìœ„í•¨
+				throw new ArithmeticException("ì˜¤ë²„í”Œë¡œìš° ë°œìƒ");
 
 			}
 		}

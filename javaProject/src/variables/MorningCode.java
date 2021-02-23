@@ -8,13 +8,13 @@ public class MorningCode {
 		int result = a1 + a2;
 		
 		if (result < 30) {
-			System.out.println("³ªÀÌ°¡ Á» µé¾ú½À´Ï´Ù.");
+			System.out.println("ë‚˜ì´ê°€ ì¢€ ë“¤ì—ˆìŠµë‹ˆë‹¤.");
 		}
 		else if (result > 30) {
-			System.out.println("ÇÑÃ¢ÀÌ³×¿ä.");
+			System.out.println("í•œì°½ì´ë„¤ìš”.");
 		}
 		else {
-			System.out.println("ÀûÁ¤ÇÑ ³ªÀÌÀÔ´Ï´Ù.");
+			System.out.println("ì ì •í•œ ë‚˜ì´ì…ë‹ˆë‹¤.");
 		}
 	}
 

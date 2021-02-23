@@ -5,8 +5,8 @@ public class IfElseExample {
 		String grade = "F";
 		int score = 84;
 
-		// if, else »ç¿ëÇØ¼­ 90Á¡ ÀÌ»ó=A/ 80Á¡ ÀÌ»ó=B/70Á¡ ÀÌ»ó=C/±× ¿Ü=F
-		// Á¡¼ö 85´Â BÀÔ´Ï´Ù. Ãâ·Â
+		// if, else ì‚¬ìš©í•´ì„œ 90ì  ì´ìƒ=A/ 80ì  ì´ìƒ=B/70ì  ì´ìƒ=C/ê·¸ ì™¸=F
+		// ì ìˆ˜ 85ëŠ” Bì…ë‹ˆë‹¤. ì¶œë ¥
 
 		if (score >= 90) {
 			grade = "A";
@@ -17,21 +17,21 @@ public class IfElseExample {
 		} else {
 			grade = "F";
 		}
-		System.out.println("Á¡¼ö " + score + "Á¡Àº " + grade + "ÀÔ´Ï´Ù.");
+		System.out.println("ì ìˆ˜ " + score + "ì ì€ " + grade + "ì…ë‹ˆë‹¤.");
 
 //		
 //		if (score >= 90) { 
-//			System.out.println("Á¡¼ö " + score + "Á¡Àº AÀÔ´Ï´Ù." );
+//			System.out.println("ì ìˆ˜ " + score + "ì ì€ Aì…ë‹ˆë‹¤." );
 //		} else if (score >= 80) {
-//			System.out.println("Á¡¼ö " + score + "Á¡Àº BÀÔ´Ï´Ù." );
+//			System.out.println("ì ìˆ˜ " + score + "ì ì€ Bì…ë‹ˆë‹¤." );
 //		} else if (score >= 70) {
-//			System.out.println("Á¡¼ö " + score + "Á¡Àº CÀÔ´Ï´Ù." );
+//			System.out.println("ì ìˆ˜ " + score + "ì ì€ Cì…ë‹ˆë‹¤." );
 //		} else {
-//			System.out.println("Á¡¼ö " + score + "Á¡Àº FÀÔ´Ï´Ù." );
+//			System.out.println("ì ìˆ˜ " + score + "ì ì€ Fì…ë‹ˆë‹¤." );
 //		}
 
-		// if±¸¹®¾È¿¡ if, else ³Ö±â
-		// 95Á¡ÀÌ»óÀº A+ ,...
+		// ifêµ¬ë¬¸ì•ˆì— if, else ë„£ê¸°
+		// 95ì ì´ìƒì€ A+ ,...
 		if (score >= 90) {			
 			if (score >= 95) {
 				grade = "A+";
@@ -53,11 +53,11 @@ public class IfElseExample {
 		} else {
 			grade = "F";
 		}
-		System.out.println("Á¡¼ö " + score + "Á¡Àº " + grade + "ÀÔ´Ï´Ù.");
+		System.out.println("ì ìˆ˜ " + score + "ì ì€ " + grade + "ì…ë‹ˆë‹¤.");
 
 		
 		
-		//switch ±¸¹® ¸¸µé±â
+		//switch êµ¬ë¬¸ ë§Œë“¤ê¸°
 		
 		switch (score/10) {
 		case 9: grade = "A"; break;
@@ -69,8 +69,9 @@ public class IfElseExample {
 		default : grade = "F";
 	
 		}
-		System.out.println("Á¡¼ö " + score + "Á¡Àº " + grade + "ÀÔ´Ï´Ù.");
+		System.out.println("ì ìˆ˜ " + score + "ì ì€ " + grade + "ì…ë‹ˆë‹¤.");
 
 	}
 
 }
+

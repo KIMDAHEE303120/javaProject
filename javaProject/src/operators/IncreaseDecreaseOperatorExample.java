@@ -5,12 +5,12 @@ public class IncreaseDecreaseOperatorExample {
 		int x = 10;
 		int y = 10;
 		int z;
-		System.out.println(x++);//10 > xÀÇ °ªÀ» Ãâ·ÂÇÑ ´ÙÀ½ 1À» ´õÇÏ±â ¶§¹®¿¡ 10ÀÌ Ãâ·Â
+		System.out.println(x++);//10 > xì˜ ê°’ì„ ì¶œë ¥í•œ ë‹¤ìŒ 1ì„ ë”í•˜ê¸° ë•Œë¬¸ì— 10ì´ ì¶œë ¥
 		System.out.println(++x);//12
 		System.out.println(x);//12
 		System.out.println("--------------------");
-		z = ++x + y++; // x: 13, y: 11 < z = +¿¬»êÀ» ÇÑ ÈÄ y¿¡ 1À» ´õÇÏ±â ¶§¹®¿¡ z´Â 23ÀÌ µÊ 
-					   //24¸¦ ¸¸µé°í ½ÍÀ¸¸é "z = ++x + ++y; ÇØÁà¾ßÇÔ 
+		z = ++x + y++; // x: 13, y: 11 < z = +ì—°ì‚°ì„ í•œ í›„ yì— 1ì„ ë”í•˜ê¸° ë•Œë¬¸ì— zëŠ” 23ì´ ë¨ 
+					   //24ë¥¼ ë§Œë“¤ê³  ì‹¶ìœ¼ë©´ "z = ++x + ++y; í•´ì¤˜ì•¼í•¨ 
 		System.out.println("z: " + z + " ,x: " + x +", y: " + y);
 		
 	}

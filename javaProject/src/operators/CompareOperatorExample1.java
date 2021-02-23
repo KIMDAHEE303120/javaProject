@@ -4,17 +4,18 @@ public class CompareOperatorExample1 {
 	public static void main(String[] args) {
 		int num1 = 10;
 		int num2 = 10;
-		boolean result1 = (num1 == num2); // °°ÀºÁö
-		boolean result2 = (num1 != num2); // ´Ù¸¥Áö
-		boolean result3 = (num1 <= num2); // °°°Å³ª ÀÛÀºÁö °Ë»ç
+		boolean result1 = (num1 == num2); //ê°™ì€ì§€
+		boolean result2 = (num1 != num2); //ë‹¤ë¥¸ì§€
+		boolean result3 = (num1 <= num2); //ê°™ê±°ë‚˜ ì‘ì€ì§€ ê²€ì‚¬
 		System.out.println("result1= " + result1);
 		System.out.println("result2= " + result2);
 		System.out.println("result3= " + result3);
-
+		
+		
 		char char1 = 'A';
 		char char2 = 'B';
 		boolean result4 = (char1 < char2);
-		System.out.println("result4= " + result4); // À¯´ÏÄÚµå A=65, B=66ÀÌ±â ¶§¹®¿¡ trueÃâ·ÂµÊ
-
+		System.out.println("result4= " + result4); //ìœ ë‹ˆì½”ë“œ A=65, B=66ì´ê¸° ë•Œë¬¸ì— trueì¶œë ¥ë¨
+				
 	}
 }

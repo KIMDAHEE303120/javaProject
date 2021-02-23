@@ -3,38 +3,38 @@ package operators;
 public class MethodExample {
 	public static void main(String[] args) {
 		int result = sum(10, 20);
-		System.out.println("sum °á°ú: " + result);
+		System.out.println("sum ê²°ê³¼: " + result);
 
 		result = minus(30, 20);
-		System.out.println("minus °á°ú: " + result);
+		System.out.println("minus ê²°ê³¼: " + result);
 
 		result = multi(15, 13);
-		System.out.println("multi °á°ú: " + result);
+		System.out.println("multi ê²°ê³¼: " + result);
 
-		result = divide(31, 12);//ctrl+¸¶¿ì½º·Î divideÅ¬¸¯ÇÏ¸é ÇØ´ç ½ÄÀÌ ÇØ´çÇÏ´Â ¸Ş¼Òµå·Î ÀÌµ¿
-		System.out.println("divide °á°ú: " + result);
+		result = divide(31, 12);//ctrl+ë§ˆìš°ìŠ¤ë¡œ divideí´ë¦­í•˜ë©´ í•´ë‹¹ ì‹ì´ í•´ë‹¹í•˜ëŠ” ë©”ì†Œë“œë¡œ ì´ë™
+		System.out.println("divide ê²°ê³¼: " + result);
 		
-//		printAge(25); //¹İÈ¯ÇØÁÖ´Â °ªÀÌ ¾ø¾î¼­ °ªÀ» ¹İÈ¯ÇØ´Ş¶ó´Â ½ÄÀ» »ç¿ë(=result)ÇÏ¸é ¿¡·¯°¡ ³²
+//		printAge(25); //ë°˜í™˜í•´ì£¼ëŠ” ê°’ì´ ì—†ì–´ì„œ ê°’ì„ ë°˜í™˜í•´ë‹¬ë¼ëŠ” ì‹ì„ ì‚¬ìš©(=result)í•˜ë©´ ì—ëŸ¬ê°€ ë‚¨
 	}
 	
 /*		public static void printAge(int age) {
-		System.out.println("³ªÀÌ´Â : " + age + "ÀÔ´Ï´Ù.");
+		System.out.println("ë‚˜ì´ëŠ” : " + age + "ì…ë‹ˆë‹¤.");
 	}
 */
 		
-	// result = 30, 20ÀÇ Â÷ÀÌ¸¦ °è»êÇÏ´Â ¸Ş¼Òµå minus() ¸¸µé±â
+	// result = 30, 20ì˜ ì°¨ì´ë¥¼ ê³„ì‚°í•˜ëŠ” ë©”ì†Œë“œ minus() ë§Œë“¤ê¸°
 	public static int minus(int a, int b) {
 		int result = a - b;
 		return result;
 	}
 
-	// result = 15, 13ÀÇ °öÀ» °è»êÇÏ´Â ¸Ş¼Òµå multi() ¸¸µé±â
+	// result = 15, 13ì˜ ê³±ì„ ê³„ì‚°í•˜ëŠ” ë©”ì†Œë“œ multi() ë§Œë“¤ê¸°
 	public static int multi(int a, int b) {
 		int result = a * b;
 		return result;
 	}
 
-	// result = 30, 12¸¦ ³ª´« ¸òÀ» °è»êÇÏ´Â ¸Ş¼Òµå divide() ¸¸µé±â
+	// result = 30, 12ë¥¼ ë‚˜ëˆˆ ëª«ì„ ê³„ì‚°í•˜ëŠ” ë©”ì†Œë“œ divide() ë§Œë“¤ê¸°
 	public static int divide(int a, int b) {
 		int result = a / b;
 		return result;

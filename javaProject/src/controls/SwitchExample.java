@@ -2,23 +2,23 @@ package controls;
 
 public class SwitchExample {
 	public static void main(String[] args) {
-		//ÀÓÀÇÀÇ ¼ıÀÚ¸¦ ¸¸µé¾îÁÖ´Â ¸Ş¼Òµå
+		//ì„ì˜ì˜ ìˆ«ìë¥¼ ë§Œë“¤ì–´ì£¼ëŠ” ë©”ì†Œë“œ
 //		for (int i=0; i<5; i++) {
 //			int z = (int) (Math.random() * 5) + 1;
-//			System.out.println(z); //0~5 »çÀÌÀÇ ÀÓÀÇ¼ö
+//			System.out.println(z); //0~5 ì‚¬ì´ì˜ ì„ì˜ìˆ˜
 //			}
 	
-		String msg = "Â¦¼ö/È¦¼ö";
+		String msg = "ì§ìˆ˜/í™€ìˆ˜";
 		int z = (int) (Math.random() * 6) + 1;
 		switch(z) {
 		case 1:  
 		case 2: 
-		case 3: msg = "È¦¼ö"; break;
+		case 3: msg = "í™€ìˆ˜"; break;
 		case 4: 
 		case 5: 
-		case 6: msg = "Â¦¼ö"; break;
+		case 6: msg = "ì§ìˆ˜"; break;
 		}
-		System.out.println(z + "(Àº)´Â " + msg + "ÀÔ´Ï´Ù.");
+		System.out.println(z + "(ì€)ëŠ” " + msg + "ì…ë‹ˆë‹¤.");
 	}
 }
 

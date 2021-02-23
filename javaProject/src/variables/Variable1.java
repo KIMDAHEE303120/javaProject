@@ -11,13 +11,13 @@ public class Variable1 {
 		int result2 = s1 + 100; 
 		
 		int result3 = i1 + 10000;
-		long result4 = l1 + 25000; // longÇü Å¸ÀÔÀº 25000À» longÇüÅÂ·Î ¹Ù²Ù¾î ¿¬»êÇÏ±â ¶§¹®¿¡ ¿À·ùx (Å«Å¸ÀÔÀ¸·Î ¿¬»êµÊ)
+		long result4 = l1 + 25000; // longí˜• íƒ€ì…ì€ 25000ì„ longí˜•íƒœë¡œ ë°”ê¾¸ì–´ ì—°ì‚°í•˜ê¸° ë•Œë¬¸ì— ì˜¤ë¥˜x (í°íƒ€ì…ìœ¼ë¡œ ì—°ì‚°ë¨)
 		
-		System.out.println("°á°ú°ªÀº : " + result4);
+		System.out.println("ê²°ê³¼ê°’ì€ : " + result4);
 		
 	}
 	
-	/*int result4 = 5; >>Å¬·¡½º¿¡ ¼Ò¼ÓµÈ °ÍÀº ÇÊµå,,,,
-	System.out.println("°á°ú°ªÀº : " + result4);
+	/*int result4 = 5; >>í´ë˜ìŠ¤ì— ì†Œì†ëœ ê²ƒì€ í•„ë“œ,,,,
+	System.out.println("ê²°ê³¼ê°’ì€ : " + result4);
 	*/
 }

@@ -4,7 +4,7 @@ public class OperationsPromotionExample {
 	public static void main(String[] args) {
 		byte byteValue1 = 10;
 		byte byteValue2 = 20;
-		//        byte byteValue3 = byteValue1 + byteValue2; >byte´Â int·Î ½Ä ¸¸µé¾î¾ß ÇÏ´Âµí,,, Àß ¸ğ¸£°ÚÀ½
+		//        byte byteValue3 = byteValue1 + byteValue2; >byteëŠ” intë¡œ ì‹ ë§Œë“¤ì–´ì•¼ í•˜ëŠ”ë“¯,,, ì˜ ëª¨ë¥´ê² ìŒ
 		int intValue1 = byteValue1 + byteValue2;
 		System.out.println(intValue1);
 		
@@ -13,19 +13,19 @@ public class OperationsPromotionExample {
 		char charValue2 = 1;
 		//char charValue3 = charValue1 + charValue2;
 		int intValue2 = charValue1 + charValue2;
-		System.out.println("À¯´ÏÄÚµå = " + intValue2);
-		System.out.println("Ãâ·Â¹®ÀÚ = " + (char)intValue2);
-		//À¯´ÏÄÚµå 'A(=65)'º¸´Ù 1¸¸Å­ Å« °ªÀÎ 'B(=66)'°¡ Ãâ·Â..!
-		//System.out.println("charValue1ÀÇ À¯´ÏÄÚµå = " + (int)charValue1);>'A'=65ÀÎ°ÍÀ» È®ÀÎ
+		System.out.println("ìœ ë‹ˆì½”ë“œ = " + intValue2);
+		System.out.println("ì¶œë ¥ë¬¸ì = " + (char)intValue2);
+		//ìœ ë‹ˆì½”ë“œ 'A(=65)'ë³´ë‹¤ 1ë§Œí¼ í° ê°’ì¸ 'B(=66)'ê°€ ì¶œë ¥..!
+		//System.out.println("charValue1ì˜ ìœ ë‹ˆì½”ë“œ = " + (int)charValue1);>'A'=65ì¸ê²ƒì„ í™•ì¸
 		
 		
 		int intValue3 = 10;
 		int intValue4 = intValue3/4;
 		System.out.println(intValue4);
-		// ¼Ò¼öÁ¡Àº ¾È³ª¿À³×..
+		// ì†Œìˆ˜ì ì€ ì•ˆë‚˜ì˜¤ë„¤..
 		
 		int intValue5 = 10;
-		//		int intValue6 = 10 / 4.0;  > Á¤¼ö°¡ ¾Æ´Ñ 4.0ÀÌ ¿Í¼­ ÄÄÆÄÀÏ ¿¡·¯
+		//		int intValue6 = 10 / 4.0;  > ì •ìˆ˜ê°€ ì•„ë‹Œ 4.0ì´ ì™€ì„œ ì»´íŒŒì¼ ì—ëŸ¬
 		double doubleValue = intValue5 / 4.0;
 		System.out.println(doubleValue);
 	
@@ -33,5 +33,3 @@ public class OperationsPromotionExample {
 
 	
 }
-
-

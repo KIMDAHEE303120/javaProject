@@ -2,13 +2,13 @@ package variables;
 
 public class CharExample {
 	public static void main(String[] args) {
-		char c1 = 'A';//¹®ÀÚ
-		char c2 = 65;//10Áø¼ö
-		char c3 = '\u0041';//16Áø¼ö
+		char c1 = 'A';//ë¬¸ì
+		char c2 = 65;//10ì§„ìˆ˜
+		char c3 = '\u0041';//16ì§„ìˆ˜
 		
-		char c4 = '°¡';//¹®ÀÚ 
-		char c5 = 44032;//10Áø¼ö
-		char c6 = '\uac00';//16Áø¼ö ac00(16)=44032(10)
+		char c4 = 'ê°€';//ë¬¸ì 
+		char c5 = 44032;//10ì§„ìˆ˜
+		char c6 = '\uac00';//16ì§„ìˆ˜ ac00(16)=44032(10)
 		
 		int uniCode = c1;
 		

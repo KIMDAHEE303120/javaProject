@@ -7,7 +7,7 @@ public class GetAverageValue {
 		int n2 = 18;
 		
 		double result = (double)(n1 + n2) / 2;
-		System.out.println("µÎ ¼öÀÇ Æò±ÕÀº " + result + "ÀÔ´Ï´Ù.");
+		System.out.println("ë‘ ìˆ˜ì˜ í‰ê· ì€ " + result + "ì…ë‹ˆë‹¤.");
 	}
 
 }
