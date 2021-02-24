@@ -24,6 +24,7 @@ public class WhileExample {
 				break; // 어떠한 조건을 만족하면 빠져나오라는 구문을 넣어줘야 함
 			}
 
+			
 			i++;
 
 		}
@@ -32,3 +33,4 @@ public class WhileExample {
 	}
 
 }
+
