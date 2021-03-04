@@ -52,9 +52,10 @@ public class BankApplication {
 	private static void accountList() {
 		System.out.println("--------계좌목록--------");
 		for (int i = 0; i < accountAttay.length; i++) {
-			if(accountAttay[i] != null) {
-				System.out.println("계좌번호: ");
+			if (accountAttay[i] != null) {
+				System.out.println(Account2(null, null, i));
 			}
+		}
 	}
 
 	private static void deposit() {
