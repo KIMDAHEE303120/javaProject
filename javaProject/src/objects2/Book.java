@@ -53,20 +53,19 @@ public class Book {
 	}
 
 	// LibraryApp 속성
-	Book[] bookList = new Book[10];
-
-	public void getBookInfo() {
-		for (int i = 0; i < bookList.length; i++) {
-			if (bookList[i] != null) {
-				//System.out.print(bookList[i].getBookTitle() + "/");
-				System.out
-				.print("책이름: " + bookTitle + ", 저자: " + bookWriter + ", 출판사: " + bookPublisher + ", 가격: " + BookPrice);
-			} else {
-				
-			} break;
-		} 
-
-	}
+//
+//	public void getBookInfo() {
+//		for (int i = 0; i < bookList.length; i++) {
+//			if (bookList[i] != null) {
+//				//System.out.print(bookList[i].getBookTitle() + "/");
+//				System.out
+//				.print("책이름: " + bookTitle + ", 저자: " + bookWriter + ", 출판사: " + bookPublisher + ", 가격: " + BookPrice);
+//			} else {
+//				
+//			} break;
+//		} 
+//
+//	}
 
 	// LibraryApp 도서목록
 //	public String getBookInfo() {
