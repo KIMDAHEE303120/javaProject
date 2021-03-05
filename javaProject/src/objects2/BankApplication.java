@@ -53,7 +53,7 @@ public class BankApplication {
 		System.out.println("--------계좌목록--------");
 		for (int i = 0; i < accountAttay.length; i++) {
 			if (accountAttay[i] != null) {
-				System.out.println(Account2(null, null, i));
+				System.out.println();
 			}
 		}
 	}
