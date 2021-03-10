@@ -19,6 +19,7 @@ public class Key {
 		return false;
 	}
 
+	//해시코드의 메소드를 Key클래스에 추가해야 KeyExample에서 읽을때 'new key(1)'의 값이 저장한 'new key(1)'의 값과 같아짐 
 	@Override
 	public int hashCode() {
 		return number;
