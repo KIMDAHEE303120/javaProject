@@ -27,7 +27,6 @@ public class CastingExample {
 			System.out.println("byte타입 값 : " + b);
 		}
 		
-		
 	}
 
 }
