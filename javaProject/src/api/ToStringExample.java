@@ -9,10 +9,10 @@ import java.util.Objects;
 public class ToStringExample {
 	public static void main(String[] args) {
 		
-//		Object obj1 = new Object();
-//		Date obj2 = new Date();
-//		System.out.println(obj1.toString());
-//		System.out.println(obj2.toString());
+		Object obj1 = new Object();
+		Date obj2 = new Date();
+		System.out.println(obj1.toString());
+		System.out.println(obj2.toString());
 //--------------------------------------------------
 		
 		String str1 = "홍길동";
@@ -20,6 +20,7 @@ public class ToStringExample {
 		System.out.println(Objects.toString(str1));
 		System.out.println(Objects.toString(str2));
 		System.out.println(Objects.toString(str2, "이름이 없습니다."));
+		System.out.println(str1 + ", " + str2);
 		
 	}
 

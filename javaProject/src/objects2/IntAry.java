@@ -1,9 +1,9 @@
 package objects2;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
-import com.sun.tools.javac.util.List;
+//import java.util.ArrayList;
+//import java.util.Arrays;
+//
+//import com.sun.tools.javac.util.List;
 
 public class IntAry {
 	public static void main(String[] args) {
