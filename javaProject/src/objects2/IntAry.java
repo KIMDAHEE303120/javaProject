@@ -10,6 +10,7 @@ public class IntAry {
 
 		int[] intAry = null;
 		intAry = new int[] { 4, 8, 3 };
+		
 //		Arrays.sort(intAry);
 //
 //		for (int i = 0; i < intAry.length; i++) {
@@ -20,15 +21,9 @@ public class IntAry {
 		for (int i = 0; i < intAry.length; i++) {
 			if (intAry[i] > highAry) {
 				highAry = intAry[i];
-			}
-			for (int j = 0; j < intAry.length; j++) {
-				if (intAry[j] > nextAry) {
-					nextAry = intAry[j];
-
-				}
-			}
-			System.out.println(highAry);
+			}						
 		}
+		System.out.println(highAry);
 
 		// 컬렉션으로 비교
 //		List<Integer> aList = new ArrayList<>();
