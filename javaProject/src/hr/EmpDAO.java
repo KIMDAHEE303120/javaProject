@@ -108,6 +108,7 @@ public class EmpDAO {
 				emp.setEmployeeId(rs.getInt("employee_id"));
 				emp.setFirstname(rs.getString("first_name"));
 				emp.setLastname(rs.getString("last_name"));
+				emp.setJobId(rs.getString("job_id"));
 				emp.setSalary(rs.getInt("salary"));
 				set.add(emp);
 			}

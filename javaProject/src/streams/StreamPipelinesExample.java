@@ -46,7 +46,5 @@ public class StreamPipelinesExample {
 		} else {
 			System.out.println("만족하는 요소가 없습니다.");
 		}
-		
-
 	}
 }
