@@ -10,6 +10,7 @@ public class SortingExample {
 	public static void main(String[] args) {
 		IntStream intAry = Arrays.stream(new int[] { 1, 3, 4, 5, 2 });
 
+		
 		intAry
 		.sorted()
 		.forEach(new IntConsumer() {
@@ -22,9 +23,9 @@ public class SortingExample {
 		
 		
 		Student[] stdAry = { 
-				new Student("Hong", 30), 
-				new Student("Shin", 20), 
-				new Student("Yu", 15), 
+				new Student("Hong", 30, 30), 
+				new Student("Shin", 20, 30), 
+				new Student("Yu", 15, 30), 
 				};
 		Stream<Student> st = Arrays.stream(stdAry);
 		st

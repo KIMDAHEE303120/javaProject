@@ -65,7 +65,7 @@ public class Employee implements Comparable<Employee> { // DB연결할 때
 	public void setJobId(String jobId) {
 		this.jobId = jobId;
 	}
-
+	
 	public int getSalary() {
 		return salary;
 	}
@@ -80,6 +80,7 @@ public class Employee implements Comparable<Employee> { // DB연결할 때
 				+ email + ", phoneNumber=" + phoneNumber + ", hireDate=" + hireDate + ", jobId=" + jobId + ", salary="
 				+ salary + "]";
 	}
+	
 
 //	@Override
 //	public int compareTo(Employee o) {

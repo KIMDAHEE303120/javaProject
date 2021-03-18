@@ -43,8 +43,9 @@ public class Ball {
 			if (strike == 3) {
 				System.out.println("~~~~~~정답~~~~~~");
 				System.out.println("===============\n");
-				r = true;			
+				r = true;
 			}
-		}
+			
+		} //end of while
 	}
 }

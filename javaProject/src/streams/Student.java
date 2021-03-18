@@ -2,19 +2,25 @@ package streams;
 
 public class Student implements Comparable<Student> {
 	private String name;
-	private int score;
+	private int engScore;
+	private int mathScore;
 
-	public Student(String name, int score) {
+	public Student(String name, int engScore, int mathScore) {
 		this.name = name;
-		this.score = score;
+		this.engScore = engScore;
+		this.mathScore = mathScore;
 	}
 
 	public String getName() {
 		return name;
 	}
 
-	public int getScore() {
-		return score;
+	public int getEngScore() {
+		return engScore;
+	}
+	
+	public int getMathScore() {
+		return mathScore;
 	}
 
 	@Override

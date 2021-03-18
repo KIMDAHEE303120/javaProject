@@ -7,9 +7,9 @@ import java.util.function.ToIntFunction;
 public class ReduceExample {
 	public static void main(String[] args) {
 		Student[] students = { 
-				new Student("홍길동", 10), 
-				new Student("신용권", 20), 
-				new Student("유미선", 60) };
+				new Student("홍길동", 10, 10), 
+				new Student("신용권", 20, 10), 
+				new Student("유미선", 60, 10) };
 
 //		int sum = Arrays.stream(students)
 //		.mapToInt(new ToIntFunction<Student>() {
@@ -23,7 +23,7 @@ public class ReduceExample {
 		int sum = Arrays.stream(students).mapToInt(new ToIntFunction<Student>() {
 			@Override
 			public int applyAsInt(Student value) {
-				return value.getScore();
+				return value.getEngScore();
 			}
 		}).reduce(0, new IntBinaryOperator() {
 			int sum = 0, count = 0;

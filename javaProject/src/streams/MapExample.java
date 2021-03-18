@@ -8,9 +8,9 @@ import java.util.stream.Stream;
 public class MapExample {
 	public static void main(String[] args) {
 		List<Student> studentList = Arrays.asList(
-				new Student("홍길동", 10), 
-				new Student("신용권", 20),
-				new Student("유미선", 30)
+				new Student("홍길동", 10, 10), 
+				new Student("신용권", 20, 10),
+				new Student("유미선", 30, 10)
 				);
 
 //		studentList.stream()
@@ -32,7 +32,7 @@ public class MapExample {
 
 		
 		studentList.stream()
-		.mapToInt((s) -> s.getScore())
+		.mapToInt((s) -> s.getEngScore())
 		.forEach((score) -> System.out.println(score));
 
 		int[] intAry = {};

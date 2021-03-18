@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 import hr.EmpDAO;
 import hr.Employee;
 
+
 public class ToListExample {
 	public static void main(String[] args) {
 		List<String> list = Arrays.asList("Hong", "Hwang", "Park");
