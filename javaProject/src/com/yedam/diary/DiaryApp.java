@@ -1,12 +1,16 @@
 package com.yedam.diary;
 
+import java.util.List;
+
+import javax.swing.text.AbstractDocument.Content;
+
 //구현담당...
 public class DiaryApp {
 	DAO dao; // 인터페이스 타입으로 선언
 
 	public void start() {
-		dao = new DiaryListDAO();
-//		dao = new DiaryOracleDAO();
+//		dao = new DiaryListDAO();
+		dao = new DiaryOracleDAO();
 
 		// 파일 입출력으로 ..
 		int menuNum = 0;
@@ -54,6 +58,8 @@ public class DiaryApp {
 		case 수정:	update();		break;
 		case 삭제:	delete();		break;
 		case 전체조회:	selectAll();	break;
+		case 날짜검색:	selectDate();		break;
+		case 내용검색:	selectContent();	break;
 		}
 		
 	} // end of process
@@ -105,10 +111,42 @@ public class DiaryApp {
 	// 전체조회
 	public void selectAll() {
 		System.out.println("전체조회선택 >>");
+		System.out.println();
 		for(DiaryVO vo : dao.selectAll()) {
-			System.out.println(vo.getWdate());
-			System.out.println(vo.getContents());
+			print(vo);
 		}
+	}
+	
+	//날짜검색
+	public void selectDate() {
+		System.out.println("날짜검색선택 >>");
+		System.out.println("날짜: [yyMMdd]");
+		String wdate = StdInputUtil.readDate();
+		DiaryVO vo = dao.selectDate(wdate);
+		print(vo);
+	}
+	
+	//내용검색
+	public void selectContent() {
+		System.out.println("내용검색선택 >>");
+		System.out.print("검색내용: ");
+		String content = StdInputUtil.readLine();
+		System.out.println();
+		List<DiaryVO> vo = dao.selectContent(content);
+		if (dao.selectContent(content) != null) {
+			for (DiaryVO vo1 : vo) {
+				print(vo1);
+			}
+		}
+
+	}
+
+	//출력형태 설정
+	public void print(DiaryVO vo) {
+		System.out.println("< 날짜: " + vo.getWdate() + " >");
+		System.out.println(vo.getContents());
+		System.out.println("----------------------------------------------------");
+		
 	}
 
 } // end of class

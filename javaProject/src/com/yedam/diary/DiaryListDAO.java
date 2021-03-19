@@ -66,17 +66,17 @@ public class DiaryListDAO implements DAO {
 	@Override
 	public int insert(DiaryVO vo) {
 		int cnt = list.size();
-		int ii = cnt;
-		for (int i = 0; i < cnt; i++) {
-			if (list.get(i).getWdate().equals(vo.getWdate())) { // 중복날짜 입력불가..
+		//int ii = cnt;
+		for (; cnt>0 ;cnt--) {
+			if (list.get(cnt-1).getWdate().equals(vo.getWdate())) { // 중복날짜 입력불가..
 				return 0;
 			}
-			if (list.get(i).getWdate().compareTo(vo.getWdate()) > 0) { // String인 날짜값을 비교해서 순서정하기,,
-				ii = i;
+			if (list.get(cnt-1).getWdate().compareTo(vo.getWdate()) > 0) { // String인 날짜값을 비교해서 순서정하기,,
+				//ii = i;
 				break;
 			}
 		}
-		list.add(ii, vo);
+		list.add(cnt, vo);
 		writeFile();
 		return 1;
 	}
@@ -85,8 +85,9 @@ public class DiaryListDAO implements DAO {
 	public void update(DiaryVO vo) {
 		int cnt = list.size();
 		for (int i = 0; i < cnt; i++) {
-			if(list.get(i).getWdate().equals(vo)) {
-				list.set(i, vo);
+			if(list.get(i).getWdate().equals(vo.getWdate())) {
+				list.set(i, vo); //객체 자체를 바꿈
+				//list.get(i).setContents(vo.getContents()); >> key값으로 내용만 바꿈
 			} 
 		}
 	}
@@ -106,12 +107,25 @@ public class DiaryListDAO implements DAO {
 
 	@Override
 	public DiaryVO selectDate(String date) {
+		int cnt = list.size();
+		for (int i = 0; i < cnt; i++) {
+			if (list.get(i).getWdate().equals(date)) {
+				return list.get(i);
+			}
+		}
 		return null;
 	}
 
 	@Override
 	public List<DiaryVO> selectContent(String content) {
-		return null;
+		int cnt = list.size();
+		List<DiaryVO> result = new ArrayList<DiaryVO>();
+		for (int i = 0; i < cnt; i++) {
+			if (list.get(i).getContents().indexOf(content) != -1) {
+				result.add(list.get(i));
+			}
+		}
+		return result;
 	}
 
 	@Override

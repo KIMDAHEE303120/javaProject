@@ -23,7 +23,7 @@ public class FileReaderExample {
 		fw = new FileWriter("C:/Temp/emp.txt");
 		fw.write("Hello World");
 		
-				fw.flush();
+		fw.flush();
 		fw.close();
 		fr.close();
 		

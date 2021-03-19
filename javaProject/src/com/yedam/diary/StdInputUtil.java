@@ -58,5 +58,14 @@ public class StdInputUtil {
 		return result.toString();
 
 	} // end of readMultiLine
+	
+	public static String readLine() {
+		try {
+			return br.readLine();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 
 }
