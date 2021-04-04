@@ -81,22 +81,22 @@ public class Star {
 //		
 
 		// 모래시계
-		int start = 0, end = 10;
-		for (int i = 0; i < 9; i++) {
-			if (i < 10 / 2) {
-				start = i;
-				end--;
-			} else {
-				start--;
-				end++;
-			}
-			for (int j = start; j > 0; j--) {
-				System.out.print("");
-			}
-			for (int j = start; j < end; j++) {
-				System.out.print("*");
-			}
-			System.out.print("\n");
-		}
+//		int start = 0, end = 10;
+//		for (int i = 0; i < 9; i++) {
+//			if (i < 10 / 2) {
+//				start = i;
+//				end--;
+//			} else {
+//				start--;
+//				end++;
+//			}
+//			for (int j = start; j > 0; j--) {
+//				System.out.print("");
+//			}
+//			for (int j = start; j < end; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.print("\n");
+//		}
 	}
 }

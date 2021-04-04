@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Play {
 	public static void main(String[] args) {
+		// 가위바위보
 		Scanner scn = new Scanner(System.in);
 		int count = 0;
 
